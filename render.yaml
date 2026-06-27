@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chatfilter-api
+    runtime: docker
+    repo: https://github.com/mepiii/ChatFilter
+    plan: free
+    region: oregon
+    rootDir: backend
+    healthCheckPath: /api/model-metrics
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://chatfilter.vercel.app

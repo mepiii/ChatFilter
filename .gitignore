@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local data/runtime
+*.db
+*.sqlite
+*.sqlite3
+artifacts/
+
+# Node
+node_modules/
+dist/
+
+# Claude/local indexes
+.claude/
+.tldr/
+.tldrignore
+
+# Environment
+.env
